@@ -1,0 +1,11 @@
+Each of these files should produce their own output folder for the cleaned dataset that they produce. Cargo Theft, Hate Crime, and Human trafficking were recorded on a 
+per incident basis, so I had to merge similar row values accordingly, usually based a set of shared attributes (City / County, State, Offense / Number of offenders).
+
+For NIBRS, I had to merge all their tables together into a single excel sheet (2012 - 2020), while keeping the population relatively the same. I opted to take the average
+of the area's population. For other numerical values, they are the sum of all years stored into a single row / column. Many of NIBRS' crime columns were cut off because
+I thought that it would look messy in the final visualization.
+
+To run the code, they require the necessary datasets; nibrs datasets must have their own folder within the same directory as the code that is being run while the other three 
+(cargo, hate, human) must be in the same folder as the code. I have provided them in case you need / want to run them.
+
+The NIBRS folder is the exact same as the one provided in the parent directory.
